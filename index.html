@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style-css/style.css">
+    <title>Savings Money</title>
+</head>
+<body>
+    <main class="main-bg bg-slate-300">
+        <h2 class="text-center font-2xl font-bold">Income</h2>
+        <div class="flex font-2xl font-bold ml-60">
+            <h2>income:</h2>
+            <input id="income" type="text">
+        </div>
+        <h2 class="text-center font-2xl font-bold">Expenses</h2>
+        <div class="ml-60 font-2xl font-bold">
+            <div class="flex mb-2">
+                <h2 class="">FOOD:</h2>
+                <input id="food" class="ml-2" type="text">               
+            </div>
+            <div class="flex mb-2">
+                <h2>Rent:</h2>
+                <input id="rent" class="ml-2" type="text"><br>               
+            </div>
+            <div class="flex">
+                <h2>Clothes:</h2>
+                <input id="clothes" class="ml-2" type="text">
+            </div>
+        </div>
+        <button id="calculate" class="ml-72 text-white bg-amber-900 p-2 rounded-lg">Calculate</button>
+        <div class="text-center font-2xl font-bold">
+            <h2>Total Expenses: <span id="total-expenses">00</span></h2>
+            <h2>Balance: <span id="balance">00</span></h2>
+        </div>
+        <div class="ml-60 font-2xl font-bold">
+            <div class="flex ">
+                <h2>Save:</h2>
+                <input id="save" type="text">
+                <h2>%</h2>
+                <button id="save-money" class="text-white font-normal bg-amber-900 p-2 rounded-lg">Save</button>
+            </div>
+            <div>
+                <h2>Saving Amount: <span id="saving-amount">00</span></h2>
+                <h2>Remaining Balance: <span id="remaining-balance">00</span></h2>
+            </div>
+        </div>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
